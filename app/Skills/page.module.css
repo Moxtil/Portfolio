@@ -1,0 +1,77 @@
+.mainContainer {
+  margin-top: 100px;
+  padding: 12px;
+}
+.container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 776px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .container > div {
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .container .skills {
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+  .container .skills > * {
+    flex-grow: 1;
+    flex-basis: 50px;
+  }
+}
+.container > .leftSide h3 > span {
+  color: gold;
+}
+.container > .leftSide h1 {
+  margin-block: 10px;
+  letter-spacing: 3px;
+  font-size: 40px;
+}
+.container > .leftSide p {
+  color: #888;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.container > .leftSide > a {
+  margin-top: 20px;
+  border: 2px solid gold;
+  padding: 10px;
+  color: gold;
+  font-weight: 500;
+  border-radius: 2px;
+}
+.container .leftSide {
+  flex: 3;
+}
+.container .skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  flex: 1;
+}
+.container .skills > div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #eee;
+  padding: 10px;
+  box-shadow: 0 0 8px gold;
+}
+.container .skills > div > svg {
+  font-size: 40px;
+}
+.container .skills > div > p {
+  font-size: 20px;
+}

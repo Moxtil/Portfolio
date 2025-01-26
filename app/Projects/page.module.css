@@ -1,0 +1,60 @@
+.mainContainer {
+  margin-top: 100px;
+  padding: 12px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.container > a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  border: 2px solid white;
+  min-width: 300px;
+  height: 525px;
+  transition: 0.25s ease all;
+}
+.container > a:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 10px gold;
+}
+
+.container > a img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: fill;
+}
+.container > a > p {
+  font-size: 14px;
+  display: flex;
+  align-items: start;
+  width: 100%;
+}
+.container > a > p > svg {
+  width: 100%;
+}
+.container a .tags {
+  padding: 7px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container a .tags span {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  background: #fff;
+  color: #222;
+  padding: 7px;
+  font-weight: 500;
+  border-radius: 20px;
+}
