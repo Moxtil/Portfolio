@@ -38,11 +38,14 @@
 .container .leftSide #job {
   animation: render 1.2s infinite, typing 5s infinite steps(19);
   width: max-content;
+  /* max-width: 200px; */
   padding-right: 10px;
   border-right: 2px solid transparent;
   overflow-x: hidden;
   text-wrap: nowrap;
+  max-width: 370px;
 }
+
 @keyframes render {
   50% {
     border-right: 2px solid #eee;
@@ -55,8 +58,14 @@
   25% {
     width: 5%;
   }
-  50% {
-    width: 50%;
+  35% {
+    width: 30%;
+  }
+  55% {
+    width: 55%;
+  }
+  80% {
+    width: 80%;
   }
   100% {
     width: calc((max-content) + 20px);

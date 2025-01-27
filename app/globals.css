@@ -95,10 +95,6 @@ a {
   .navbar .links > a {
     color: #222;
   }
-  .navbar .links > a:hover,
-  .navbar .links a.active {
-    color: #777;
-  }
 }
 .loader {
   margin: 300px auto;

@@ -20,20 +20,20 @@ export default function Home() {
             resulting in quality work .
           </p>
           <div className={styles.socialMedia}>
-            <a target="_blank" href={"https://www.instagram.com/moxtil1/"}>
+            <Link target="_blank" href={"https://www.instagram.com/moxtil1/"}>
               <FaInstagram />
-            </a>
-            <a target="_blank" href={"https://github.com/Moxtil"}>
+            </Link>
+            <Link target="_blank" href={"https://github.com/Moxtil"}>
               <FaGithub />
-            </a>
-            <a
+            </Link>
+            <Link
               target="_blank"
               href={
                 "https://www.upwork.com/freelancers/~015af7430dc4d43b9f?companyReference=1699050900555100161&mp_source=share"
               }
             >
               <FaUpwork />
-            </a>
+            </Link>
           </div>
         </div>
         <div className={styles.rightSide}>
